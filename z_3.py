@@ -1,0 +1,38 @@
+"""Задание 3"""
+
+print(3.1)  # 1 float
+print('строка')  # 2 str
+print([2.4, 3.6])  # 3 List[float]
+print({'key': 2, })  # 4 Dict[float, Set[Tuple[str]]]
+print(['c'])  # 5 Tuple[str,float]
+print({2.2: 3.4, 8.3: 7.6})  # 6 Dict[float, float]
+print('строка')  # 7 Set[str]
+print(98 < 379)  # 8 bool
+print({3 > 1})  # 9 Set[bool]
+print({(2.9, 6, 'строка')})  # 10 Set[Tuple[float,int,str]]
+print(9)  # 11 int
+print('Hello', 'World', '!')  # 12 List[str]
+print({(2.6, 9.7): 7 < 3})  # 13 Dict[Tuple[float,bool,str], bool]
+print({'ключ': 'значение'})  # 14 Dict[str, str]
+print((3, 9, 7))  # 15 Tuple[int]
+print({(4.8, 9.7): [7 > 9, 2 < 8]})  # 16 Dict[Tuple[float,float], List[bool]]
+print([6 > 25])  # 17 List[bool]
+print({2.8, 9, 'любой тип'})  # 18 Set[Any]
+print([2, 5, 9])  # 19 List[int]
+print([3 > 8, 8, 6.7])  # 20 List[Any]
+print({5: ['string', 25, 96.1]})  # 21 Dict[int, List[Any]]
+print((87, 87 < 8))  # 22 Tuple[int,bool]
+print((6.8, 'python'))  # 23 Tuple[float,str]
+print((95 > 67))  # 24 Tuple[bool]
+print(('very', 'long'))  # 25 Tuple[str,str]
+print((3, 78 < 37, 86.4))  # 26 Tuple[int,bool,float]
+print({98: {'set', 'python'}})  # 27 Dict[int, Set[str]]
+print((36.7, 58.4))  # 28 Tuple[float,float]
+print({6, 9, 65})  # 29 Set[int]
+print({(95 > 47, 98, 74): 945.4})  # 30 Dict[Tuple[bool,int,int], float]
+print({85.4: 75})  # 31 Dict[float, int]
+print((76 < 34, 84.3))  # 32 Tuple[bool,float]
+print([(45 > 78, 6.8), (91 > 25, 75.4)])  # 33 List[Tuple[bool,float]]
+print([(6, 25, 76), (84, 62, 47)])  # 34 List[Tuple[int]]
+print((95 < 45, 'name'))  # 35 Tuple[bool,str]
+print((96.4, 58.1))  # 36 Tuple[float]
