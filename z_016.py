@@ -79,7 +79,30 @@
 
 # 6.* С помощью reduce найти максимальное число в списке
 
-
+# from functools import reduce
+#
+# def max(a, b):
+#     if a > b:
+#         b = a
+#     return b
+#
+# print(reduce(max, [2, 23, 6, 38, 5], 5))
 
 # 7.* Написать reduce
 
+def custom_sum(first, second):
+
+    return first + second
+
+def result(custom_sum, numb, initial):
+    x = 0
+    y = 1
+    for i in numb:
+        if initial >= 0:
+            x = custom_sum(initial, i)
+        else:
+            x = custom_sum(i, numb[y])
+            y = y + 1
+    return x
+
+print(result(custom_sum, [1, 2, 3], 2))
