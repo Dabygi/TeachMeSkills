@@ -66,14 +66,53 @@
 # print(blue_book.number)
 
 
-# 4. Для класса "конверт с письмом" добавьте свойство письмо. Создайте метод который добавляет к письму подпись в конце.
+# 4. (-)  Для класса "конверт с письмом" добавьте свойство письмо. Создайте метод который добавляет к письму подпись в конце.
 # Тоесть:
 # Бла бла бла
 # текст письма
 #
 # С уважением, <имя адресата>.               <-- Это и есть подпись
 
+# class Letter:
+#     def __init__(self, stamp, weight, text):
+#         self.stamp = stamp
+#         self.weight = weight
+#         self.text = text
+#
+#     def signature(self, content):
+#         self.content = self.text + content
+#
+# letter_to_Santa = Letter(3, 105, 'Бла бла бла \n текст письма \n')
+# letter_to_Kate = Letter(4, 115, 'Тру ту ту \n текст письма \n')
+#
+# letter_to_Santa.signature('С уважением, Artem')
+# letter_to_Kate.signature('С уважением, Artem')
+#
+# print(letter_to_Santa.signature)
+# print(letter_to_Kate.signature)
 
-
-# 5. Для класса "время" добавьте свойства месяц\день\год. Создайте метод который добавляет переданное количество дней к дате которую хранит.
+# 5. (-) Для класса "дата" добавьте свойства месяц\день\год. Создайте метод который добавляет переданное количество дней к дате которую хранит.
 # Повызывайте новый метод, посмотрите как меняются свойства.
+
+class Date:
+    def __init__(self, a, b, c):
+        self.month = a
+        self.day = b
+        self.year = c
+
+    def plus_day(self, j):
+        self.day += j
+        # if self.day + j <= 31:
+        #     self.day = self.day + j
+        # if self.day + j > 31:
+        #     self.day = (self.day + j) - 31
+        #     self.month += 1
+
+new_year = Date(1, 31, 1989)
+fools_day = Date(4, 1, 1992)
+
+new_year.plus_day(6)
+fools_day.plus_day(8)
+
+print(new_year.plus_day)
+print(fools_day.plus_day)

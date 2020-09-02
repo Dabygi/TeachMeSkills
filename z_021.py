@@ -1,4 +1,4 @@
-"""Задание 21"""
+"""Задание 21 (ООП классы и их свойства)"""
 
 # 1. Создайте класс выражающий существительное "человек".
 # Создайте 2 объекта этого класса, посмотрите их свойства.
@@ -72,3 +72,14 @@ print(april.__dict__)
 
 # 6.  Создайте класс выражающий словосочетание "конверт с письмом"
 # Создайте 2 объекта этого класса, посмотрите их свойства.
+
+class Letter:
+    def __init__(self, stamp, weight):
+        self.stamp = stamp
+        self.weight = weight
+
+letter_to_Santa = Letter(3, 105)
+letter_to_Kate = Letter(4, 115)
+
+print(letter_to_Santa.__dict__)
+print(letter_to_Kate.__dict__)
