@@ -42,14 +42,14 @@ import re
 # >>> fn("bla bla")
 # >>> "не понимаю"
 
-# def minut(a):
-#     x = re.match("^\d+\D\d+\D\d+\s\d+\D\d+\D\d+$", a) is not None
-#     if x is True:
-#         print(re.match("^\d+\D\d+\D\d+\s\d+\D(\d+)\D\d+$", a).groups())
-#     else:
-#         print('не понимаю')
-#
-# minut("2018-01-09 12:41:04")
+def minut(a):
+    x = re.match("^\d+\D\d+\D\d+\s\d+\D\d+\D\d+$", a) is not None
+    if x is True:
+        print(re.match("^\d+\D\d+\D\d+\s\d+\D(\d+)\D\d+$", a).groups())
+    else:
+        print('не понимаю')
+
+minut("2018-01-09 12:41:04")
 
 # 6. Написать калькулятор который умеет +, -, *, /. Для выдирания частей использовать .groups().
 # >>> calc("4 + 5")
@@ -59,9 +59,9 @@ import re
 # Помнить что числа могут быть не целыми 23.45, отрицательными.
 # Перед + и * в регулярном выражении ставить \
 
-def calc(a):
-    b = re.match("^.?(\d+)\s.\s.?(\d+)$", a) is not None
-    if b is True:
-        print(re.match("^(\D?\d+)\s.\s(\D?\d+)$", a).groups())
-
-calc("463 + -546")            #НЕ РЕШЕНО
+# def calc(a):
+#     b = re.match("^.?(\d+)\s.\s.?(\d+)$", a) is not None
+#     if b is True:
+#         print(re.match("^(\D?\d+)\s.\s(\D?\d+)$", a).groups())
+#
+# calc("463 + -546")            #НЕ РЕШЕНО
