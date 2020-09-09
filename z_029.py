@@ -1,4 +1,4 @@
-"""задание 29 регулярные выражения"""
+"""задание 29 регулярные выражения""" #DONE
 
 # 1. Написать регулярное выражение которое проверяет является ли строка строкой вида "a<любое число>c".
 #    Пример: a23c
@@ -42,14 +42,14 @@ import re
 # >>> fn("bla bla")
 # >>> "не понимаю"
 
-def minut(a):
-    x = re.match("^\d+\D\d+\D\d+\s\d+\D\d+\D\d+$", a) is not None
-    if x is True:
-        print(re.match("^\d+\D\d+\D\d+\s\d+\D(\d+)\D\d+$", a).groups())
-    else:
-        print('не понимаю')
-
-minut("2018-01-09 12:41:04")
+# def minut(a):
+#     x = re.match("^\d+\D\d+\D\d+\s\d+\D\d+\D\d+$", a) is not None
+#     if x is True:
+#         print(re.match("^\d+\D\d+\D\d+\s\d+\D(\d+)\D\d+$", a).groups())
+#     else:
+#         print('не понимаю')
+#
+# minut("2018-01-09 12:41:04")
 
 # 6. Написать калькулятор который умеет +, -, *, /. Для выдирания частей использовать .groups().
 # >>> calc("4 + 5")
@@ -60,8 +60,17 @@ minut("2018-01-09 12:41:04")
 # Перед + и * в регулярном выражении ставить \
 
 # def calc(a):
-#     b = re.match("^.?(\d+)\s.\s.?(\d+)$", a) is not None
-#     if b is True:
-#         print(re.match("^(\D?\d+)\s.\s(\D?\d+)$", a).groups())
+#     typ = re.match("^(.?\d+.?\d?\d?\d?)\s(.)\s(.?\d+.?\d?\d?\d?)$", a).groups()
+#     x = float(typ[0])
+#     y = float(typ[2])
+#     z = typ[1]
+#     if z == '+':
+#         return(x + y)
+#     if z == '-':
+#         return(x - y)
+#     if z == '*':
+#         return(x * y)
+#     if z == '/':
+#         return(x / y)
 #
-# calc("463 + -546")            #НЕ РЕШЕНО
+# print(calc("-1.5 * 2"))
